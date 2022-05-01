@@ -1,8 +1,9 @@
-function Stop({start}){
+function Stop({stop,start}){
+    console.log(start)
     return <div>
         <button onClick={()=>{
             start();
-        }}>Stop</button>
+        }}>{stop?"Start":"Stop"}</button>
     </div>
 }
 export {Stop}
